@@ -1,0 +1,11 @@
+ALTER TABLE `hoteles` CHANGE `telefono` `telefono` VARCHAR(10) NOT NULL;
+
+ALTER TABLE `express` ADD `num_toallas` INT NOT NULL ;
+
+ALTER TABLE `express` ADD `tipo` BOOLEAN NOT NULL AFTER `codigo_condones`;
+
+ALTER TABLE `fijas` ADD `tipo` BOOLEAN NOT NULL AFTER `num_controles`;
+
+ALTER TABLE `productos` CHANGE `precio` `precio` DOUBLE NOT NULL;
+
+ALTER TABLE `ventas` ADD `id_cliente` INT NOT NULL AFTER `id`;
