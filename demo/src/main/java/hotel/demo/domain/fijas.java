@@ -8,8 +8,16 @@ public class fijas {
     private Integer num_cama;
     private Integer num_toallas;
     private Integer num_controles;
+    private Boolean tipo;
+
     public Integer getId() {
         return id;
+    }
+    public Boolean getTipo() {
+        return tipo;
+    }
+    public void setTipo(Boolean tipo) {
+        this.tipo = tipo;
     }
     public void setId(Integer id) {
         this.id = id;
